@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import SkillsService from '../services/SkillsService'
 
-const Cv = () => (
-    <div>
-    <h1>Cv</h1>
-  </div>
-)
+export default () => {
 
-export default Cv;
+
+
+    return (
+        <Fragment>
+
+        </Fragment>
+    )
+}
+
