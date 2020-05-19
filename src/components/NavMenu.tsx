@@ -28,10 +28,8 @@ export default () => {
                                 <NavLink tag={Link} className="text-dark" to="/Lebenslauf">Lebenslauf</NavLink>
                             </NavItem>
                             <NavItem>
-                            <a className="text-dark nav-link" href="https://github.com/thorstenalpers" target="_blank" rel="noopener noreferrer">
-                            <img title="thorstenalpers - GitHub" src={'/images/github.png'} alt={"GitHub"} style={{ width: '40px' }} /></a>
-
-                                {/* <NavLink tag={Link} className="text-dark" href="https://github.com/thorstenalpers">GitHub</NavLink> */}
+                                <a className="text-dark nav-link" href="https://github.com/thorstenalpers" target="_blank" rel="noopener noreferrer">
+                                    <img title="thorstenalpers - GitHub" src={'/images/github.png'} alt={"GitHub"} style={{ width: '40px' }} /></a>
                             </NavItem>
                         </ul>
                     </Collapse>

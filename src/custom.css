@@ -90,3 +90,21 @@ canvas {
     color: black;
   }
 }
+
+.img-responsive {
+  height: auto;
+  width: auto;
+  max-height: 140px;
+  border: solid 1px #808080;
+  border-radius: 5%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.52);
+}
+
+.header img {
+  float: right;
+}
+
+.header h1 {
+  position: relative;
+
+}
