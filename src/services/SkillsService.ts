@@ -70,4 +70,9 @@ const skills: Array<ISkill> = [
         value: 10
     }];
 
-export default skills;
+
+export default {
+    getSkills() {
+        return skills;
+    }
+};
