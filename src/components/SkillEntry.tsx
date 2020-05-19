@@ -1,7 +1,6 @@
-import React, { Fragment, useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { Progress, Container, Row, Col } from 'reactstrap';
 import { ISkill } from '../services/SkillsService';
-
 
 export default (props: { skill: ISkill }) => {
   const step = 1
@@ -14,7 +13,7 @@ export default (props: { skill: ISkill }) => {
     if (progressBarValue < props.skill.value) {
       setTimeout(updateProgress, interval)
     }
-  }, [progressBarValue])
+  }, [progressBarValue, props.skill])
 
   return (
     <Container className={"pt-1 pb-1"}>

@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import { Container } from 'reactstrap';
 import SkillsService from '../services/SkillsService';
 import SkillEntry from './SkillEntry';

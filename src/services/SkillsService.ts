@@ -34,14 +34,6 @@ const skills: Array<ISkill> = [
         value: 60
     },
     {
-        name: 'Angular',
-        value: 60
-    },
-    {
-        name: 'Typescript',
-        value: 50
-    },
-    {
         name: 'Sql',
         value: 50
     },
@@ -52,6 +44,18 @@ const skills: Array<ISkill> = [
     {
         name: 'RabbitMQ',
         value: 40
+    },
+    {
+        name: 'Typescript',
+        value: 40
+    },
+    {
+        name: 'React',
+        value: 20
+    },
+    {
+        name: 'Angular',
+        value: 20
     },
     {
         name: 'Python',
@@ -67,7 +71,7 @@ const skills: Array<ISkill> = [
     },
     {
         name: 'Docker',
-        value: 10
+        value: 20
     }];
 
 
