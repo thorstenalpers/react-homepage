@@ -1,11 +1,10 @@
-// import { ISkill } from "../types/ISkill";
 
 export interface ISkill {
     name: string;
     value: number;
 }
 
-const SkillsService: Array<ISkill> = [
+const skills: Array<ISkill> = [
     {
         name: 'C#',
         value: 90
@@ -71,4 +70,4 @@ const SkillsService: Array<ISkill> = [
         value: 10
     }];
 
-export default SkillsService;
+export default skills;
