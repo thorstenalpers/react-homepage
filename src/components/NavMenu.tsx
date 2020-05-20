@@ -10,12 +10,10 @@ export default () => {
                 <Navbar.Brand href="#Home">Thorsten Alpers</Navbar.Brand>
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className="mr-auto">
+                    <Nav className="ml-auto">
                         <Nav.Link href="#Home">Über mich</Nav.Link>
                         <Nav.Link href="#Kenntnisse">Kenntnisse</Nav.Link>
                         <Nav.Link href="#Lebenslauf">Lebenslauf</Nav.Link>
-                    </Nav>
-                    <Nav>
                         <Nav.Link
                             href="https://github.com/thorstenalpers"
                             target='_blank'
