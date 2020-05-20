@@ -38,9 +38,9 @@ const jobEntries: Array<ICvEntry> = [
     companyUrl: 'https://www.dataport.de/',
     position: 'Softwarearchitekt',
     activities: ['ca. 1 Jahr Mitarbeit an Architektur Jour Fixes zur Lösung technischer Herausforderungen',
-      'ca. 1 Monat Arbeit als Scrum Master mit TFS',
+      'ca. 1 Monat Arbeit als Scrum Master',
       'ca. 1 Jahr Entwicklung an Onlinediensten zur Digitalisierung von Behörden',
-      '.Net MVC 5, HTML5, Javascript und Bootstrap']
+      '.Net MVC 4.6.2, HTML5, Javascript und Bootstrap']
   },
   {
     company: 'Crane Payment Innovations GmbH',
@@ -95,7 +95,7 @@ const educationalEntries: Array<ICvEntry> = [{
 },
 {
   company: 'Berufsfachschule für Technisches Zeichnen G17 in Hamburg',
-  companyUrl: 'https://bs13.hamburg/',
+  companyUrl: 'https://www.itech-bs14.de/startseite/',
   date: "08/2003 - 07/2005",
   logo: './images/b13.png',
   position: 'Ausbildung zum <br />Technischen Zeichner',
