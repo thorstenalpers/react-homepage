@@ -2,9 +2,8 @@ import React from 'react'
 import Typed from 'react-typed';
 import 'react-typed/dist/animatedCursor.css';
 import { Container } from 'reactstrap';
-// import Animation from './Animation/Animation';
-import Particles from 'react-particles-js';
-
+import Animation from './Animation/Animation';
+// import Particles from 'react-particles-js';
 
 
 const AboutMe = () => {
@@ -20,11 +19,13 @@ const AboutMe = () => {
             loop
             showCursor={true}
           >
-            <span className="display-4 text-center text-dark" />
+            <span className="display-4 text-center" />
           </Typed>
         </div>
       </div>
-      <Particles
+
+      <Animation/>
+      {/* <Particles
               params={{
                 particles: {
                   number: {
@@ -127,7 +128,7 @@ const AboutMe = () => {
                 retina_detect: true
               }
             	}
-            />
+            /> */}
     </Container>
   )
 }

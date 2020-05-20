@@ -57,7 +57,7 @@ canvas {
   z-index: 20;
 }
 
-/* @media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   canvas {
     visibility: hidden;
     clear: both;
@@ -69,7 +69,7 @@ canvas {
   .overlay-text {
     color: black;
   }
-} */
+}
 
 .img-responsive {
   height: auto;
