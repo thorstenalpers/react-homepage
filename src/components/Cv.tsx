@@ -36,7 +36,7 @@ export default () => {
             <br />
             <h2>Berufliche Tätigkeiten</h2>
             <br />
-            <DataGrid id="gridContainer" dataSource={jobEntries} showBorders={true} hoverStateEnabled={true}>
+            <DataGrid id="gridContainer" dataSource={jobEntries} showBorders={true} hoverStateEnabled={true} columnAutoWidth={true}>
                 <Sorting mode="none" />
                 <Column dataField="date" caption="Datum" width={150} />
                 <Column dataField="position" cellRender={renderPosition} caption="Position" width={195} />
@@ -46,7 +46,7 @@ export default () => {
             <br />
             <h2>Schulische Ausbildung</h2>
             <br />
-            <DataGrid id="gridContainer" dataSource={educationalEntries} showBorders={true} hoverStateEnabled={true}>
+            <DataGrid id="gridContainer" dataSource={educationalEntries} showBorders={true} hoverStateEnabled={true} columnAutoWidth={true}>
                 <Sorting mode="none" />
                 <Column dataField="date" caption="Datum" width={150} />
                 <Column dataField="position" cellRender={renderPosition} caption="Art" width={195} />
