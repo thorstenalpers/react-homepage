@@ -97,7 +97,7 @@ const educationalEntries: Array<ICvEntry> = [{
   company: 'Berufsfachschule für Technisches Zeichnen G17 in Hamburg',
   companyUrl: 'https://www.itech-bs14.de/startseite/',
   date: "08/2003 - 07/2005",
-  logo: './images/b13.png',
+  logo: './images/b14.png',
   position: 'Ausbildung zum <br />Technischen Zeichner',
   activities: ['Berufsabschluss: <ul><li>Technischer Zeichner Elektrotechnik, Maschinenbautechnik und Bautechnik</li></ul>',
     'Gesamtnote 2,3']
