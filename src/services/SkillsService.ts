@@ -34,12 +34,20 @@ const skills: Array<ISkill> = [
         value: 60
     },
     {
+        name: 'Software Architektur',
+        value: 60
+    },
+    {
         name: 'Sql',
         value: 50
     },
     {
         name: 'Batch',
         value: 50
+    },
+    {
+        name: 'Microservices',
+        value: 40
     },
     {
         name: 'RabbitMQ',
