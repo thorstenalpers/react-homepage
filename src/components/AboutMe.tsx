@@ -1,29 +1,44 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Typed from 'react-typed';
 import 'react-typed/dist/animatedCursor.css';
 import Animation from './Animation/Animation';
-import { Container } from 'react-bootstrap';
+import { Container, Overlay, Tooltip } from 'react-bootstrap';
 // import Particles from 'react-particles-js';
+
+import ReactPlayer from 'react-player'
 
 const AboutMe = () => {
 
   return (
     <Container>
-      <div className="col centered-content overlay-text">
-        <div className="centered-content__inner text">
-          <Typed
-            strings={['Hi! Ich bin Thorsten Alpers.', 'Ich bin ein Fullstack .NET Softwareentwickler.', 'Ich entwickle Cloud Lösungen..']}
-            typeSpeed={40}
-            backSpeed={50}
-            loop
-            showCursor={true}
-          >
-            <span className="display-4 text-center" />
-          </Typed>
-        </div>
-      </div>
 
-      <Animation/>
+
+    <div>
+    <Animation />
+    <br/>
+    <br/>
+    <ReactPlayer url='https://www.youtube.com/watch?v=y10x2WURGBs' playing loop={true} height={200} width={'auto'}/> 
+    </div>
+    
+    <div className="centered-content overlay-text overlay">
+      <div className="centered-content__inner text">
+        <Typed
+          strings={['Hi! Ich bin Thorsten Alpers.', 
+          'Ich bin ein Fullstack Softwareentwickler.', 
+          'Aktuell interessieren mich Microservices, Docker, Kafka, .Net Core, Typescript und React.',
+          'Meine Ziele sind eine hohe Softwarequalität, geringe Kosten, zufriedene Endnutzer und Auftraggeber.']}
+          startDelay={1000}
+          typeSpeed={55}
+          backSpeed={30}
+          backDelay={2000}
+          // fadeOut={true}
+          loop
+          showCursor={true}
+        >
+          <span className="display-4 text-center" />
+        </Typed>
+      </div>
+    </div>
       {/* <Particles
               params={{
                 particles: {
@@ -128,7 +143,10 @@ const AboutMe = () => {
               }
             	}
             /> */}
-    </Container>
+
+  <audio src="/audio/bad-cat.mp3 " autoPlay={true} hidden />
+
+    </Container >
   )
 }
 
