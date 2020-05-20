@@ -1,6 +1,8 @@
-import { Collapse, Container, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import React, { useState } from 'react'
+import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { ReactComponent as GithubIcon } from '../github.svg';
+import { Container } from 'react-bootstrap';
 
 export default () => {
 
@@ -12,29 +14,30 @@ export default () => {
 
     return (
         <header>
-            <Navbar className="navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3" light>
-                <Container>
-                    <NavbarBrand tag={Link} to="/">Thorsten Alpers</NavbarBrand>
-                    <NavbarToggler onClick={toggle} className="mr-2" />
-                    <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={isOpen} navbar>
-                        <ul className="navbar-nav flex-grow">
-                            <NavItem>
-                                <NavLink tag={Link} className="text-dark" to="/">Über mich</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink tag={Link} className="text-dark" to="/Kenntnisse">Kenntnisse</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink tag={Link} className="text-dark" to="/Lebenslauf">Lebenslauf</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <a className="text-dark nav-link" href="https://github.com/thorstenalpers" target="_blank" rel="noopener noreferrer">
-                                    <img title="thorstenalpers - GitHub" src={'/images/github.png'} alt={"GitHub"} style={{ width: '40px' }} /></a>
-                            </NavItem>
-                        </ul>
-                    </Collapse>
-                </Container>
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+                <Navbar.Brand href="#Home">Thorsten Alpers</Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="mr-auto">
+                        <Nav.Link href="#Home">Über mich</Nav.Link>
+                        <Nav.Link href="#Kenntnisse">Kenntnisse</Nav.Link>
+                        <Nav.Link href="#Lebenslauf">Lebenslauf</Nav.Link>
+                    </Nav>
+                    <Nav>
+                        <Nav.Link
+                            href="https://github.com/thorstenalpers"
+                            target='_blank'
+                            rel='noopener noreferrer'
+                            style={{
+                                paddingLeft: '.5rem',
+                                paddingRight: '.5rem'
+                            }}>
+                            <img title="thorstenalpers - GitHub" src={'/images/github.png'} alt={"GitHub"} style={{ width: '40px' }} />
+                        </Nav.Link>
+
+                    </Nav>
+                </Navbar.Collapse>
             </Navbar>
-        </header>
+        </header >
     );
 }

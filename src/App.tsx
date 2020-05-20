@@ -3,22 +3,23 @@ import { Route, Switch, Redirect } from 'react-router';
 import AboutMe from './components/AboutMe';
 
 import './custom.css'
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 import NavMenu from './components/NavMenu';
-import { Container } from 'reactstrap';
 import Skills from './components/Skills';
 import Cv from './components/Cv';
+import { Container } from 'react-bootstrap';
 
 export default () => (
     <Container>
-        <BrowserRouter>
+        <HashRouter>
             <NavMenu />
+            <br />
             <Switch>
-                <Route exact path='/' component={AboutMe} />
+                <Route exact path='/Home' component={AboutMe} />
                 <Route path='/Kenntnisse' component={Skills} />
                 <Route path='/Lebenslauf' component={Cv} />
-                <Redirect to="/" />
+                <Redirect to="/Home" />
             </Switch>
-        </BrowserRouter>
+        </HashRouter>
     </Container>
 );

@@ -1,10 +1,9 @@
 import React from 'react'
 import Typed from 'react-typed';
 import 'react-typed/dist/animatedCursor.css';
-import { Container } from 'reactstrap';
 import Animation from './Animation/Animation';
+import { Container } from 'react-bootstrap';
 // import Particles from 'react-particles-js';
-
 
 const AboutMe = () => {
 

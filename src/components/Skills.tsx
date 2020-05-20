@@ -1,7 +1,7 @@
 import React from 'react'
-import { Container } from 'reactstrap';
 import SkillsService from '../services/SkillsService';
 import SkillEntry from './SkillEntry';
+import { Container } from 'react-bootstrap';
 
 export default () => {
   return (

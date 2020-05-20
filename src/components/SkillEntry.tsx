@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import { Progress, Container, Row, Col } from 'reactstrap';
 import { ISkill } from '../services/SkillsService';
+import { Container, Row, Col, ProgressBar } from 'react-bootstrap';
 
 export default (props: { skill: ISkill }) => {
   const step = 1
@@ -19,7 +19,9 @@ export default (props: { skill: ISkill }) => {
     <Container className={"pt-1 pb-1"}>
       <Row>
         <Col>
-          <Progress style={{ height: 20 }} value={progressBarValue}> <div className="text-left pl-2">{progressBarValue} %</div></Progress>
+          <div>
+            <ProgressBar now={progressBarValue} label={<span className="text-right pr-2">{progressBarValue + '%'}</span>} style={{ height: 20 }} />
+          </div>
           <span >{props.skill.name}</span>
         </Col>
       </Row>
