@@ -16,8 +16,8 @@ const jobEntries: Array<ICvEntry> = [
     companyUrl: 'https://www.pwc.de/',
     position: 'Senior Associate',
     activities: ['Weiterentwicklung einer ETL-Plattform',
-    'Fullstack: Backend, Frontend, Tests, Support, DevOps und teilweise PO', 
-    'Javascript, .Net 4.6.2, .Net Core 2 und 3, Selenium, Gauge, MVC und Azure']
+      'Fullstack: Backend, Frontend, Tests, Support, DevOps und teilweise PO',
+      'Javascript, .Net 4.6.2, .Net Core 2 und 3, Selenium, Gauge, MVC und Azure']
   },
   {
     company: 'KPMG IT Service GmbH',
@@ -25,9 +25,9 @@ const jobEntries: Array<ICvEntry> = [
     logo: './images/kpmg.jpg',
     companyUrl: 'https://home.kpmg/de/de/home.html',
     position: 'Senior Softwareentwickler',
-    activities: ['Arbeit an einem Ticketmanagementsystem', 
-    '.Net Core, Angular, SQL, AMQP, RabbitMQ, NServiceBus und CQRS MediatR.', 
-    'Teilweise VB.NET, WebForms und WinForms']
+    activities: ['Arbeit an einem Ticketmanagementsystem',
+      '.Net Core, Angular, SQL, AMQP, RabbitMQ, NServiceBus und CQRS MediatR.',
+      'Teilweise VB.NET, WebForms und WinForms']
   },
   {
     company: 'Dataport AöR',
@@ -35,10 +35,10 @@ const jobEntries: Array<ICvEntry> = [
     logo: './images/dataport.png',
     companyUrl: 'https://www.dataport.de/',
     position: 'Softwarearchitekt',
-    activities: ['ca. 1 Jahr Mitarbeit an Architektur Jour Fixes zur Lösung technischer Herausforderungen', 
-    'ca. 1 Monat Arbeit als Scrum Master mit TFS', 
-    'ca. 1 Jahr Entwicklung an Onlinediensten zur Digitalisierung von Behörden', 
-    '.Net MVC 5, HTML5, Javascript und Bootstrap']
+    activities: ['ca. 1 Jahr Mitarbeit an Architektur Jour Fixes zur Lösung technischer Herausforderungen',
+      'ca. 1 Monat Arbeit als Scrum Master mit TFS',
+      'ca. 1 Jahr Entwicklung an Onlinediensten zur Digitalisierung von Behörden',
+      '.Net MVC 5, HTML5, Javascript und Bootstrap']
   },
   {
     company: 'Crane Payment Innovations GmbH',
@@ -57,15 +57,15 @@ const jobEntries: Array<ICvEntry> = [
     logo: './images/draeger_logo.png',
     companyUrl: 'https://www.draeger.com/',
     position: 'Praktikant',
-    activities: ['XML Transformationen mit XSLT', 
-    'Entwicklung automatisierter Testabläufe in C++ und NI Teststand',
-     'Erstellung von DLLs zur Ansteuerung von Aktoren und Sensoren in C++']
+    activities: ['XML Transformationen mit XSLT',
+      'Entwicklung automatisierter Testabläufe in C++ und NI Teststand',
+      'Erstellung von DLLs zur Ansteuerung von Aktoren und Sensoren in C++']
   }, {
     company: 'Hochschule für Angewandte Wissenschaften Hamburg',
     date: "03/2008 - 03/2010",
     logo: './images/haw.png',
     companyUrl: 'https://www.haw-hamburg.de/',
-    position: 'Studentischer Mitarbeiter',
+    position: 'Studentischer <br />Mitarbeiter',
     activities: ['Betreuung und Aufsicht von Laborversuchen']
   }];
 
@@ -76,29 +76,29 @@ const educationalEntries: Array<ICvEntry> = [{
   logo: './images/haw.png',
   position: 'Bachelorstudium',
   activities: ['Studienabschluss: Bachelor of Computer Science',
-  'Favorisierte Module <ul><li>Algorithmen, Rechnernetze, Verteilte Systeme und Software Engineering</li></ul>',
-  'Wahlpflichtmodule <ul><li>Hardware Software Codesign und Robot Vision</li></ul>', 
-  'Abschlussarbeit  <ul><li><a href="http://edoc.sub.uni-hamburg.de/haw/volltexte/2010/1081/pdf/alpers_abschlussarbeit.pdf" target="_blank" rel="noopener noreferrer">Modellierung eines Einparkassistenten für ein autonomes Fahrzeug implementiert auf einer SoC-Plattform</a></li></ul>', 
-  'Gesamtnote 1,4']
+    'Favorisierte Module <ul><li>Algorithmen, Rechnernetze, Verteilte Systeme und Software Engineering</li></ul>',
+    'Wahlpflichtmodule <ul><li>Hardware Software Codesign und Robot Vision</li></ul>',
+    'Abschlussarbeit  <ul><li><a href="http://edoc.sub.uni-hamburg.de/haw/volltexte/2010/1081/pdf/alpers_abschlussarbeit.pdf" target="_blank" rel="noopener noreferrer">Modellierung eines Einparkassistenten für ein autonomes Fahrzeug <br/>implementiert auf einer SoC-Plattform</a></li></ul>',
+    'Gesamtnote 1,4']
 },
 {
   company: 'John',
   companyUrl: 'https://www.bbs-winsen.de/',
   date: "08/2005 - 07/2006",
   logo: './images/bbs-winsen.jpg',
-  position: 'Fachoberschule Elektrotechnik',
-  activities: ['Abschluss mit der Fachhochschulreife', 
-  'Wahlpflichtkurs Informatik',  
-  'Gesamtnote 2,8']
+  position: 'Fachoberschule <br />Elektrotechnik',
+  activities: ['Abschluss mit der Fachhochschulreife',
+    'Wahlpflichtkurs Informatik',
+    'Gesamtnote 2,8']
 },
 {
   company: 'Berufsfachschule für Technisches Zeichnen G17 in Hamburg',
   companyUrl: 'https://bs13.hamburg/',
   date: "08/2003 - 07/2005",
   logo: './images/b13.png',
-  position: 'Ausbildung zum Technischen Zeichner',
-  activities: [ 'Berufsabschluss: <ul><li>Technischer Zeichner Elektrotechnik, Maschinenbautechnik und Bautechnik</li></ul>', 
-  'Gesamtnote 2,3']
+  position: 'Ausbildung zum <br />Technischen Zeichner',
+  activities: ['Berufsabschluss: <ul><li>Technischer Zeichner Elektrotechnik, Maschinenbautechnik und Bautechnik</li></ul>',
+    'Gesamtnote 2,3']
 }];
 
 export default {

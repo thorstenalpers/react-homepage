@@ -22,6 +22,10 @@ export default () => {
         </ul>);
     }
 
+    const renderPosition = (data: { value: string; }) => {
+        return (<span dangerouslySetInnerHTML={createMarkup(data.value)} />);
+    }
+
     return (
         <Fragment>
             <div className="header">
@@ -32,21 +36,21 @@ export default () => {
             <br />
             <h2>Berufliche Tätigkeiten</h2>
             <br />
-            <DataGrid id="gridContainer" dataSource={jobEntries} showBorders={true} hoverStateEnabled={true} columnAutoWidth={true}>
+            <DataGrid id="gridContainer" dataSource={jobEntries} showBorders={true} hoverStateEnabled={true}>
                 <Sorting mode="none" />
                 <Column dataField="date" caption="Datum" width={150} />
-                <Column dataField="position" caption="Position" width={270} />
-                <Column dataField="company" cellRender={renderCompany} caption="Unternehmen" width={110} />
+                <Column dataField="position" cellRender={renderPosition} caption="Position" width={195} />
+                <Column dataField="company" cellRender={renderCompany} caption="Unternehmen" width={95} />
                 <Column dataField="activities" cellRender={renderActivities} caption="Tätigkeiten" />
             </DataGrid>
             <br />
             <h2>Schulische Ausbildung</h2>
             <br />
-            <DataGrid id="gridContainer" dataSource={educationalEntries} showBorders={true} hoverStateEnabled={true} columnAutoWidth={true} >
+            <DataGrid id="gridContainer" dataSource={educationalEntries} showBorders={true} hoverStateEnabled={true}>
                 <Sorting mode="none" />
                 <Column dataField="date" caption="Datum" width={150} />
-                <Column dataField="position" caption="Art" width={270} />
-                <Column dataField="company" cellRender={renderCompany} caption="Schule" width={110} />
+                <Column dataField="position" cellRender={renderPosition} caption="Art" width={195} />
+                <Column dataField="company" cellRender={renderCompany} caption="Schule" width={95} />
                 <Column dataField="activities" cellRender={renderActivities} caption="Tätigkeiten" />
             </DataGrid>
             <br />
