@@ -29,28 +29,8 @@ a.navbar-brand {
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
-/* html,
-body,
-#root {
-  width: 100%;
-  height: 1000px;
-  margin: 0;
-  padding: 0;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -khtml-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  overflow: hidden;
-}
-
-#root {
-  overflow: auto;
-} */
-
 canvas {
-  height: 800px !important
+  height: 90vh !important
 }
 
 .overlay {
@@ -77,7 +57,7 @@ canvas {
   z-index: 20;
 }
 
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   canvas {
     visibility: hidden;
     clear: both;
@@ -89,7 +69,7 @@ canvas {
   .overlay-text {
     color: black;
   }
-}
+} */
 
 .img-responsive {
   height: auto;

@@ -26,7 +26,7 @@ function Swarm({ count, mouse }) {
     for (let i = 0; i < count; i++) {
       const t = Math.random() * 100
       const factor = 20 + Math.random() * 100
-      const speed = 0.01 + Math.random() / 200
+      const speed = 0.001 + Math.random() / 2000
       const xFactor = -50 + Math.random() * 100
       const yFactor = -50 + Math.random() * 100
       const zFactor = -50 + Math.random() * 100
@@ -64,15 +64,15 @@ function Swarm({ count, mouse }) {
   })
   return (
     <>
-      <pointLight ref={light} distance={40} intensity={8} color="lightblue">
+      <pointLight ref={light} distance={20} intensity={5} color="lightblue">
         <mesh scale={[1, 1, 6]}>
           <dodecahedronBufferGeometry attach="geometry" args={[4, 0]} />
-          <meshBasicMaterial attach="material" color="lightblue" transparent />
+          <meshBasicMaterial attach="material" color="lightblue" />
         </mesh>
       </pointLight>
       <instancedMesh ref={mesh} args={[null, null, count]}>
         <dodecahedronBufferGeometry attach="geometry" args={[1, 0]} />
-        <meshStandardMaterial attach="material" color="#020000" />
+        <meshStandardMaterial attach="material" color="#003d99"  />
       </instancedMesh>
     </>
   )
