@@ -16,10 +16,10 @@ export default () => (
             <NavMenuWithRouter />
             <br />
             <Switch>
-                <Route exact path='/' component={AboutMe} />
+                <Route exact path='/Home' component={AboutMe} />
                 <Route path='/Kenntnisse' component={Skills} />
                 <Route path='/Lebenslauf' component={Cv} />
-                <Redirect to="/" />
+                <Redirect to="/Home" />
             </Switch>
         </HashRouter>
     </Container>
