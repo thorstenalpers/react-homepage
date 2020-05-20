@@ -143,9 +143,6 @@ const AboutMe = () => {
               }
             	}
             /> */}
-
-  <audio src="/audio/bad-cat.mp3 " autoPlay={true} hidden />
-
     </Container >
   )
 }
