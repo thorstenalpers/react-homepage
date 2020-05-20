@@ -16,6 +16,7 @@ const jobEntries: Array<ICvEntry> = [
     companyUrl: 'https://www.pwc.de/',
     position: 'Senior Associate',
     activities: ['Weiterentwicklung einer ETL-Plattform',
+      'Azure Cloud mit Docker und AppServices',
       'Fullstack: Backend, Frontend, Tests, Support, DevOps und teilweise PO',
       'Javascript, .Net 4.6.2, .Net Core 2 und 3, Selenium, Gauge, MVC und Azure']
   },
@@ -26,6 +27,7 @@ const jobEntries: Array<ICvEntry> = [
     companyUrl: 'https://home.kpmg/de/de/home.html',
     position: 'Senior Softwareentwickler',
     activities: ['Arbeit an einem Ticketmanagementsystem',
+      'Microservice orientierte Architektur mit Azure Service Fabric',
       '.Net Core, Angular, SQL, AMQP, RabbitMQ, NServiceBus und CQRS MediatR.',
       'Teilweise VB.NET, WebForms und WinForms']
   },
