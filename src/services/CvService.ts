@@ -11,14 +11,13 @@ export interface ICvEntry {
 const jobEntries: Array<ICvEntry> = [
   {
     company: 'PricewaterhouseCoopers GmbH',
-    date: "ab 09/2019",
+    date: "09/2019 - 08/2020",
     logo: './images/pwc.png',
     companyUrl: 'https://www.pwc.de/',
     position: 'Senior Associate',
-    activities: ['Weiterentwicklung einer ETL-Plattform',
-      'Azure Cloud mit Docker und AppServices',
-      'Fullstack: Backend, Frontend, Tests, Support, DevOps und teilweise PO',
-      'Javascript, .Net 4.6.2, .Net Core 2 und 3, Selenium, Gauge, MVC und Azure']
+    activities: ['Enwicklung mit Kanban',
+      'Fully Fullstack: Backend, Frontend, E2E-Testen, Support, DevOps und PO',
+      '1 Jahr Weiterentwicklung<ul><li>Javascript, Asp .Net 4.6.2 MVC, .Net Core 2+3, Selenium und Azure Cloud mit Docker</li> </ul>']
   },
   {
     company: 'KPMG IT Service GmbH',
@@ -26,10 +25,9 @@ const jobEntries: Array<ICvEntry> = [
     logo: './images/kpmg.jpg',
     companyUrl: 'https://home.kpmg/de/de/home.html',
     position: 'Senior Softwareentwickler',
-    activities: ['Arbeit an einem Ticketmanagementsystem',
-      'Microservice orientierte Architektur mit Azure Service Fabric',
-      '.Net Core, Angular, SQL, AMQP, RabbitMQ, NServiceBus und CQRS MediatR.',
-      'Teilweise VB.NET, WebForms und WinForms']
+    activities: ['Entwicklung mit Scrum',
+      'ca. 5 Monate Neuentwicklung <ul> <li>.Net Core, Angular, Typescript, RabbitMQ, Microservices und Azure Service Fabric</li> </ul>',
+      'ca. 1 Monat Weiterentwicklung <ul> <li>VB.NET, WebForms und WinForms</li> </ul>']
   },
   {
     company: 'Dataport AöR',
@@ -37,10 +35,11 @@ const jobEntries: Array<ICvEntry> = [
     logo: './images/dataport.png',
     companyUrl: 'https://www.dataport.de/',
     position: 'Softwarearchitekt',
-    activities: ['ca. 1 Jahr Mitarbeit an Architektur Jour Fixes zur Lösung technischer Herausforderungen',
-      'ca. 1 Monat Arbeit als Scrum Master',
-      'ca. 1 Jahr Entwicklung an Onlinediensten zur Digitalisierung von Behörden',
-      '.Net MVC 4.6.2, HTML5, Javascript und Bootstrap']
+    activities: ['Entwicklung mit Scrum',
+      'Mitwirken in Architektur Jour Fixes',
+      'Technical Lead',
+      'ca. 1 Monat als Scrum Master',
+      'ca. 1 Jahr Entwicklung an Onlinediensten zur Digitalisierung von Behörden <ul> <li>.Net MVC 4.6.2, HTML5, Javascript und Bootstrap</li> </ul>']
   },
   {
     company: 'Crane Payment Innovations GmbH',
@@ -48,10 +47,12 @@ const jobEntries: Array<ICvEntry> = [
     logo: './images/cpi.svg',
     companyUrl: 'https://www.cranepi.com/',
     position: 'Softwareentwickler',
-    activities: ['ca. 1 Jahr: Zeiterfassungssystem. <ul> <li>Play Framework, Java, Scala, HTML5, CSS3 und Bootstrap</li> </ul>',
+    activities: ['Entwicklung mit Kanban',
+      'ca. 1 Jahr: Zeiterfassungssystem. <ul> <li>Play Framework, Java, Scala, HTML5, CSS3 und Bootstrap</li> </ul>',
       'ca. 5 Jahre: Statistische Parametern zur Kompensation von Sensormesswerten.  <ul> <li>C# mit WPF, C++ mit QT, Python und Octave</li> </ul>',
       'ca. 3 Jahre: Entwicklung von Software für Dauertests von Münzprüfern und Hoppern, <ul><li>C++ mit QT</li></ul>',
-      'ca. 1 Jahr Embedded Software <ul><li>I2C Kommunikation und SPI zu USB Konverter</li></ul>']
+      'ca. 1 Jahr Embedded Software <ul><li>I2C, SPI und USB</li></ul>',
+      'Betreuung von Praktikanten']
   },
   {
     company: 'Dräger Medical GmbH',
@@ -59,7 +60,8 @@ const jobEntries: Array<ICvEntry> = [
     logo: './images/draeger_logo.png',
     companyUrl: 'https://www.draeger.com/',
     position: 'Praktikant',
-    activities: ['XML Transformationen mit XSLT',
+    activities: ['Entwicklung mit Extreme Programming und V-Modell',
+      'XML Transformationen mit XSLT',
       'Entwicklung automatisierter Testabläufe in C++ und NI Teststand',
       'Erstellung von DLLs zur Ansteuerung von Aktoren und Sensoren in C++']
   }, {
