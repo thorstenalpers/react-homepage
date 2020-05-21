@@ -18,6 +18,10 @@ const skills: Array<ISkill> = [
         value: 80
     },
     {
+        name: 'Scrum',
+        value: 80
+    },
+    {
         name: 'ASP.net MVC 5',
         value: 70
     },
