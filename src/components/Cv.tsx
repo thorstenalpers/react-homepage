@@ -7,6 +7,7 @@ export default () => {
 
     const jobEntries = CvService.getJobEntries();
     const educationalEntries = CvService.getEducationalEntries();
+
     const renderCompany = (data: { value: string; }) => {
         let cvEntry: ICvEntry;
         cvEntry = jobEntries.find(e => e.company === data.value) ?? educationalEntries.find(e => e.company === data.value);

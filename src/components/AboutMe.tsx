@@ -1,8 +1,8 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import Typed from 'react-typed';
 import 'react-typed/dist/animatedCursor.css';
 import Animation from './Animation/Animation';
-import { Container, Overlay, Tooltip } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 
 import ReactPlayer from 'react-player'
 

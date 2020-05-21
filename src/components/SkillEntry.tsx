@@ -7,13 +7,21 @@ export default (props: { skill: ISkill }) => {
   const interval = 100
 
   const [progressBarValue, setProgressBarValue] = useState<number>(0);
+  const [willUnMount, SetWillUnMount] = useState<boolean>(false);
 
   useEffect(() => {
     const updateProgress = () => setProgressBarValue(progressBarValue + step)
-    if (progressBarValue < props.skill.value) {
+    if (!willUnMount && progressBarValue < props.skill.value) {
       setTimeout(updateProgress, interval)
     }
   }, [progressBarValue, props.skill])
+
+  useEffect(() => {
+    return () => {
+      // cleanup, compenent get removed from DOM
+      SetWillUnMount(true);
+    };
+  }, []);
 
   return (
     <Container className={"pt-1 pb-1"}>
