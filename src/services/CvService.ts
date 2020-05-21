@@ -39,7 +39,7 @@ const jobEntries: Array<ICvEntry> = [
       'Mitwirken in Architektur Jour Fixes',
       'Technical Lead',
       'ca. 1 Monat als Scrum Master',
-      'ca. 1 Jahr Entwicklung an Onlinediensten zur Digitalisierung von Behörden <ul> <li>.Net MVC 4.6.2, HTML5, Javascript und Bootstrap</li> </ul>']
+      'ca. 1 Jahr Entwicklung an Onlinediensten zur Digitalisierung von Behörden <ul> <li> Asp .Net 4.6.2 MVC, HTML5, Javascript und Bootstrap</li> </ul>']
   },
   {
     company: 'Crane Payment Innovations GmbH',
@@ -49,7 +49,7 @@ const jobEntries: Array<ICvEntry> = [
     position: 'Softwareentwickler',
     activities: ['Entwicklung mit Kanban',
       'ca. 1 Jahr: Zeiterfassungssystem. <ul> <li>Play Framework, Java, Scala, HTML5, CSS3 und Bootstrap</li> </ul>',
-      'ca. 5 Jahre: Statistische Parametern zur Kompensation von Sensormesswerten.  <ul> <li>C# mit WPF, C++ mit QT, Python und Octave</li> </ul>',
+      'ca. 5 Jahre: Statistische Parametern zur Kompensation von Sensormesswerten. <ul> <li>C# mit WPF, C++ mit QT, Python und Octave</li> </ul>',
       'ca. 3 Jahre: Entwicklung von Software für Dauertests von Münzprüfern und Hoppern, <ul><li>C++ mit QT</li></ul>',
       'ca. 1 Jahr Embedded Software <ul><li>I2C, SPI und USB</li></ul>',
       'Betreuung von Praktikanten']
@@ -86,7 +86,7 @@ const educationalEntries: Array<ICvEntry> = [{
     'Gesamtnote 1,4']
 },
 {
-  company: 'John',
+  company: 'BBS Winsen Luhe',
   companyUrl: 'https://www.bbs-winsen.de/',
   date: "08/2005 - 07/2006",
   logo: './images/bbs-winsen.jpg',
