@@ -50,6 +50,10 @@ const skills: Array<ISkill> = [
         value: 50
     },
     {
+        name: 'Azure',
+        value: 50
+    },
+    {
         name: 'Microservices',
         value: 40
     },
@@ -63,7 +67,15 @@ const skills: Array<ISkill> = [
     },
     {
         name: 'React',
-        value: 20
+        value: 40
+    },
+    {
+        name: 'Azure CLI + Azure Rest API',
+        value: 40
+    },
+    {
+        name: 'Powershell',
+        value: 30
     },
     {
         name: 'Angular',
