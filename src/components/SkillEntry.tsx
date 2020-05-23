@@ -5,13 +5,18 @@ import { Row, Col, ProgressBar } from 'react-bootstrap';
 export default (props: { skill: ISkill }) => {
   const step = 5
   const interval = 200
+  let willUnMount: boolean = false
 
   const [progressBarValue, setProgressBarValue] = useState<number>(0);
   const [progressBarAnimated, setProgressBarAnimated] = useState<boolean>(true);
-  const [willUnMount, SetWillUnMount] = useState<boolean>(false);
+
+  const updateProgress = () => {
+    if (!willUnMount)
+      setProgressBarValue(progressBarValue + step)
+  }
 
   useLayoutEffect(() => {
-    const updateProgress = () => setProgressBarValue(progressBarValue + step)
+
     if (!willUnMount && progressBarValue < props.skill.value) {
       setTimeout(updateProgress, interval)
     }
@@ -23,7 +28,7 @@ export default (props: { skill: ISkill }) => {
   useEffect(() => {
     return () => {
       // cleanup, stop updating progressbar when this component is removed from DOM
-      SetWillUnMount(true);
+      willUnMount = true;
     };
   }, []);
 
