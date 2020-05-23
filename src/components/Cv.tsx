@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import DataGrid, { Column, Sorting } from 'devextreme-react/data-grid';
 import CvService from '../services/CvService';
 import { ICvEntry } from '../services/CvService';
+import { Helmet } from 'react-helmet'
 
 export default () => {
 
@@ -29,6 +30,10 @@ export default () => {
 
     return (
         <Fragment>
+            <Helmet>
+                <meta name="description" content="Lebenslauf von Thorsten Alpers" />
+            </Helmet>
+
             <div className="header">
                 <img className="img-responsive pull-right" src="/images/Foto_TAlpers.jpg" alt="Foto" />
                 <h1>Lebenslauf</h1>
@@ -56,7 +61,6 @@ export default () => {
             </DataGrid>
             <br />
             <br />
-
         </Fragment>
     )
 }

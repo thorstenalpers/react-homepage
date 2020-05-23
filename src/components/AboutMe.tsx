@@ -5,6 +5,7 @@ import Animation from './Animation/Animation';
 import { Container } from 'react-bootstrap';
 
 import ReactPlayer from 'react-player'
+import { Helmet } from 'react-helmet';
 
 const AboutMe = () => {
 
@@ -16,6 +17,9 @@ const AboutMe = () => {
 
   return (
     <Container>
+      <Helmet>
+        <meta name="description" content="Thorsten Alpers" />
+      </Helmet>
       <div>
         <Animation />
         <br />
