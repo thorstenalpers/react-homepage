@@ -64,15 +64,15 @@ function Swarm({ count, mouse }) {
   })
   return (
     <>
-      <pointLight ref={light} distance={20} intensity={5} color="lightblue">
-        <mesh scale={[1, 1, 6]}>
-          <dodecahedronBufferGeometry attach="geometry" args={[4, 0]} />
-          <meshBasicMaterial attach="material" color="lightblue" />
+      <pointLight ref={light} distance={15} intensity={4} color="white">
+        <mesh scale={[1, 1, 1]}>
+          <dodecahedronBufferGeometry attach="geometry" args={[0, 0]} />
+          <meshBasicMaterial attach="material" color="white" />
         </mesh>
       </pointLight>
       <instancedMesh ref={mesh} args={[null, null, count]}>
         <dodecahedronBufferGeometry attach="geometry" args={[1, 0]} />
-        <meshStandardMaterial attach="material" color="#003d99"  />
+        <meshStandardMaterial attach="material" color="#FFF" />
       </instancedMesh>
     </>
   )
@@ -87,7 +87,7 @@ function Effect({ down }) {
   return (
     <effectComposer ref={composer} args={[gl]}>
       <renderPass attachArray="passes" scene={scene} camera={camera} />
-      <waterPass attachArray="passes" factor={2} />
+      <waterPass attachArray="passes" factor={3} />
       <unrealBloomPass attachArray="passes" args={[aspect, 2, 1, 0]} />
       <filmPass attachArray="passes" args={[0.25, 0.4, 1500, false]} />
       <glitchPass attachArray="passes" factor={down ? 1 : 0} />
@@ -96,19 +96,18 @@ function Effect({ down }) {
 }
 
 function Animation() {
-  const [down, set] = useState(false)
   const mouse = useRef([300, -200])
   const onMouseMove = useCallback(({ clientX: x, clientY: y }) => (mouse.current = [x - window.innerWidth / 2, y - window.innerHeight / 2]), [])
   return (
-    <Canvas camera={{ fov: 100, position: [0, 0, 30] }} onMouseMove={onMouseMove} onMouseUp={() => set(false)} onMouseDown={() => set(true)}>
-      <pointLight distance={60} intensity={2} color="white" />
-      <spotLight intensity={2} position={[0, 0, 70]} penumbra={1} color="red" />
+    <Canvas camera={{ fov: 100, position: [0, 0, 30] }} onMouseMove={onMouseMove}>
+      <pointLight distance={26} intensity={3} color="#001c80" />
+      <spotLight intensity={2} position={[0, 0, 70]} penumbra={1} color="#010101" />
       <mesh>
         <planeBufferGeometry attach="geometry" args={[10000, 10000]} />
-        <meshStandardMaterial attach="material" color="#00ffff" depthTest={false} />
+        <meshStandardMaterial attach="material" color="red" depthTest={true} />
       </mesh>
-      <Swarm mouse={mouse} count={20000} />
-      <Effect down={down} />
+      <Swarm mouse={mouse} count={15000} />
+      <Effect />
     </Canvas>
   )
 }
