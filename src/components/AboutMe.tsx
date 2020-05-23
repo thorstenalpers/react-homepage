@@ -23,7 +23,7 @@ const AboutMe = () => {
         <ReactPlayer url='https://www.youtube.com/watch?v=y10x2WURGBs' height={200} width={'auto'} config={playerConfig} />
       </div>
       <div className="centered-content overlay-text overlay">
-        <div className="centered-content__inner text">
+        <div className="centered-content__inner text display-4 ">
           <Typed
             strings={['Hi! Ich bin Thorsten Alpers.',
               'Ich bin ein Fullstack Softwareentwickler.',
@@ -36,7 +36,7 @@ const AboutMe = () => {
             loop
             showCursor={true}
           >
-            <span className="display-4 text-center" />
+            <span className="text-center" />
           </Typed>
         </div>
       </div>
