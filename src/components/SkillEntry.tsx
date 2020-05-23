@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useLayoutEffect } from 'react'
 import { ISkill } from '../services/SkillsService';
-import { Container, Row, Col, ProgressBar } from 'react-bootstrap';
+import { Row, Col, ProgressBar } from 'react-bootstrap';
 
 export default (props: { skill: ISkill }) => {
   const step = 5
@@ -18,7 +18,7 @@ export default (props: { skill: ISkill }) => {
     else {
       setProgressBarAnimated(false)
     }
-  }, [progressBarValue, props.skill])
+  }, [progressBarValue, props.skill, willUnMount])
 
   useEffect(() => {
     return () => {

@@ -47,7 +47,7 @@ const jobEntries: Array<ICvEntry> = [
     logo: './images/cpi.svg',
     companyUrl: 'https://www.cranepi.com/',
     position: 'Softwareentwickler',
-    activities: ['Entwicklung mit Kanban',
+    activities: ['Entwicklung mit Kanban und Scrum',
       'ca. 1 Jahr: Zeiterfassungssystem. <ul> <li>Play Framework, Java, Scala, HTML5, CSS3 und Bootstrap</li> </ul>',
       'ca. 5 Jahre: Statistische Parametern zur Kompensation von Sensormesswerten. <ul> <li>C# mit WPF, C++ mit QT, Python und Octave</li> </ul>',
       'ca. 3 Jahre: Entwicklung von Software für Dauertests von Münzprüfern und Hoppern, <ul><li>C++ mit QT</li></ul>',
