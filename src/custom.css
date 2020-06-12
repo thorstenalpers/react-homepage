@@ -3,7 +3,7 @@ a {
 }
 
 code {
-  color: #E01A76;
+  color: #e01a76;
 }
 
 .btn-primary {
@@ -11,7 +11,6 @@ code {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
-
 
 html {
   font-size: 14px;
@@ -29,15 +28,13 @@ a.navbar-brand {
   word-break: break-all;
 }
 
-
 .box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
 }
 
 canvas {
-  height: 90vh !important
+  height: 90vh !important;
 }
-
 
 .overlay {
   color: white;
@@ -82,5 +79,4 @@ canvas {
 
 .header h1 {
   position: relative;
-
 }
