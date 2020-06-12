@@ -10,7 +10,7 @@ export interface ICvEntry {
 const jobEntries: Array<ICvEntry> = [
   {
     company: "PricewaterhouseCoopers GmbH",
-    date: "09/2019 - 08/2020",
+    date: "09/2019 - 09/2020",
     logo: "./images/pwc.png",
     companyUrl: "https://www.pwc.de/",
     position: "Senior Associate",
