@@ -5,23 +5,13 @@ import { HashRouter } from "react-router-dom";
 import NavMenu from "./components/NavMenu";
 import Skills from "./components/Skills";
 import Cv from "./components/Cv";
-import ReactPlayer from "react-player";
 import { Container } from "react-bootstrap";
 import "./custom.css";
+import Footer from "./components/Footer";
 
 const NavMenuWithRouter = withRouter(NavMenu);
 
 const App = () => {
-  const playerConfig = {
-    youtube: {
-      playerVars: {
-        showinfo: "1",
-        enablejsapi: "1",
-        autoplay: "1",
-        iv_load_policy: "3",
-      },
-    },
-  };
   return (
     <Container>
       <HashRouter>
@@ -34,14 +24,7 @@ const App = () => {
           <Redirect to="/Home" />
         </Switch>
         <br />
-        <br />
-        <br />
-        <ReactPlayer
-          url="https://www.youtube.com/watch?v=CcaNo8BrDcs"
-          height={200}
-          width={"auto"}
-          config={playerConfig}
-        />
+        <Footer />
       </HashRouter>
     </Container>
   );
