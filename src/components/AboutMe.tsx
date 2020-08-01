@@ -1,7 +1,7 @@
 import React from "react";
 import Typed from "react-typed";
 import "react-typed/dist/animatedCursor.css";
-import Animation from "./Animation/Animation";
+import AnimationOcean from "./AnimationOcean/AnimationOcean";
 import { Container } from "react-bootstrap";
 
 import ReactPlayer from "react-player";
@@ -25,11 +25,11 @@ const AboutMe = () => {
         <meta name="description" content="Thorsten Alpers" />
       </Helmet>
       <div>
-        <Animation />
+        <AnimationOcean />
         <br />
         <br />
         <ReactPlayer
-          url="https://www.youtube.com/watch?v=y10x2WURGBs"
+          url="https://www.youtube.com/watch?v=CcaNo8BrDcs"
           height={200}
           width={"auto"}
           config={playerConfig}
