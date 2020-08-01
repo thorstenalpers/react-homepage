@@ -29,7 +29,7 @@ const AboutMe = () => {
             typeSpeed={55}
             backSpeed={30}
             backDelay={2000}
-            loop
+            // loop
             showCursor={true}
           >
             <span className="text-center" />
