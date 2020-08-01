@@ -25,7 +25,7 @@ function init() {
     1,
     20000
   );
-  camera.position.set(-150000, 20000, 100000);
+  camera.position.set(-15000, 2000, 10000);
 
   // Sun
 
