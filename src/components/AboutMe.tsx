@@ -1,14 +1,13 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Typed from "react-typed";
 import "react-typed/dist/animatedCursor.css";
 import AnimationOcean from "./AnimationOcean/AnimationOcean";
-import { Container } from "react-bootstrap";
 
 import { Helmet } from "react-helmet";
 
 const AboutMe = () => {
   return (
-    <Container>
+    <Fragment>
       <Helmet>
         <meta name="description" content="Thorsten Alpers" />
       </Helmet>
@@ -37,7 +36,7 @@ const AboutMe = () => {
           </Typed>
         </div>
       </div>
-    </Container>
+    </Fragment>
   );
 };
 
