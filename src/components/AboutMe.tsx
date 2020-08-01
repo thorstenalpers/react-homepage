@@ -4,21 +4,9 @@ import "react-typed/dist/animatedCursor.css";
 import AnimationOcean from "./AnimationOcean/AnimationOcean";
 import { Container } from "react-bootstrap";
 
-import ReactPlayer from "react-player";
 import { Helmet } from "react-helmet";
 
 const AboutMe = () => {
-  const playerConfig = {
-    youtube: {
-      playerVars: {
-        showinfo: "1",
-        enablejsapi: "1",
-        autoplay: "1",
-        iv_load_policy: "3",
-      },
-    },
-  };
-
   return (
     <Container>
       <Helmet>
@@ -26,14 +14,6 @@ const AboutMe = () => {
       </Helmet>
       <div>
         <AnimationOcean />
-        <br />
-        <br />
-        <ReactPlayer
-          url="https://www.youtube.com/watch?v=CcaNo8BrDcs"
-          height={200}
-          width={"auto"}
-          config={playerConfig}
-        />
       </div>
       <div className="centered-content overlay-text overlay">
         <div className="centered-content__inner text display-4 ">
@@ -42,7 +22,6 @@ const AboutMe = () => {
               "Hi! Ich bin Thorsten Alpers.",
               "Ich bin ein Fullstack Softwareentwickler.",
               "Ich bin ein Teamplayer.",
-              "Ich bin ein Teamleiter.",
               "Ich bin ein Softwarearchitekt.",
               "Aktuell interessieren mich Microservices, Docker, Kafka, .Net Core, Typescript und React.",
               "Mein Ziel ist eine Software, die die Welt beser macht!",
