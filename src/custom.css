@@ -59,8 +59,11 @@ canvas {
     display: none;
   }
 
+  .animation-div {
+    height: 90vh !important;
+  }
   .overlay {
-    color: red;
+    color: black;
   }
 }
 

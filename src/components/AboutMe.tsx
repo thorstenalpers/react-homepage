@@ -12,7 +12,7 @@ const AboutMe = () => {
       <Helmet>
         <meta name="description" content="Thorsten Alpers" />
       </Helmet>
-      <div>
+      <div className="animation-div">
         <AnimationOcean />
       </div>
       <div className="centered-content overlay-text overlay">
