@@ -41,8 +41,11 @@ const AboutMe = () => {
             strings={[
               "Hi! Ich bin Thorsten Alpers.",
               "Ich bin ein Fullstack Softwareentwickler.",
+              "Ich bin ein Teamplayer.",
+              "Ich bin ein Teamleiter.",
+              "Ich bin ein Softwarearchitekt.",
               "Aktuell interessieren mich Microservices, Docker, Kafka, .Net Core, Typescript und React.",
-              "Meine Ziele sind eine hohe Softwarequalität, geringe Kosten, zufriedene Endnutzer und Auftraggeber.",
+              "Mein Ziel ist eine Software, die die Welt beser macht!",
             ]}
             startDelay={1000}
             typeSpeed={55}
