@@ -18,7 +18,7 @@ const AboutMe = () => {
         <div className="centered-content__inner text display-4 ">
           <Typed
             strings={[
-              "Moin! Ich bin Thorsten Alpers.",
+              "Hi! Ich bin Thorsten Alpers.",
               "Ich bin ein Fullstack Softwareentwickler.",
               "Ich bin ein Teamplayer.",
               "Ich bin ein Softwarearchitekt.",
