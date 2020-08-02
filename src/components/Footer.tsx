@@ -21,7 +21,6 @@ const Footer = () => {
         height={200}
         width={"auto"}
         config={playerConfig}
-        playsinline={true}
       />
     </Fragment>
   );
