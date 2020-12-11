@@ -16,7 +16,7 @@ const jobEntries: Array<ICvEntry> = [
     position: "Senior Associate",
     activities: [
       "Enwicklung mit Kanban",
-      "Fully Fullstack: Backend, Frontend, E2E-Testen, Support, DevOps und PO",
+      "Fullstack: Backend, Frontend, E2E-Testen, Support, DevOps und PO",
       "1 Jahr Weiterentwicklung<ul><li>Javascript, Asp .Net 4.6.2 MVC, .Net Core 2+3, Selenium und Azure Cloud mit Docker</li> </ul>",
     ],
   },
