@@ -10,7 +10,7 @@ export interface ICvEntry {
 const jobEntries: Array<ICvEntry> = [
   {
     company: "Hellmann Worldwide Logistics SE & Co. KG",
-    date: "since 01/2020",
+    date: "since 01/2021",
     logo: "./images/hellmann.png",
     companyUrl: "https://www.hellmann.net/",
     position: "Senior Softwareentwickler",
