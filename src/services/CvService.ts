@@ -9,8 +9,19 @@ export interface ICvEntry {
 
 const jobEntries: Array<ICvEntry> = [
   {
+    company: "Vattenfall Enrgy Trading GmbH",
+    date: "since 05/2021",
+    logo: "./images/Vattenfall.jpg",
+    companyUrl: "https://energysales.vattenfall.de/",
+    position: "Senior Softwareentwickler",
+    activities: [
+      "Fullstack: Backend, Frontend, E2E-Testen, Support und DevOps",
+      "Neuentwicklung<ul><li>Asp .Net Core, Kubernetes und RabbitMQ</li> </ul>",
+    ],
+  },
+  {
     company: "Hellmann Worldwide Logistics SE & Co. KG",
-    date: "since 01/2021",
+    date: "01/2021 - 04/2021",
     logo: "./images/hellmann.png",
     companyUrl: "https://www.hellmann.net/",
     position: "Senior Softwareentwickler",
