@@ -71,9 +71,9 @@ canvas {
   height: auto;
   width: auto;
   max-height: 140px;
-  border: solid 1px #808080;
+  border: solid 1px #fff;
   border-radius: 5%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.52);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
 }
 
 .header img {
